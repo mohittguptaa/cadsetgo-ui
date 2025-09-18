@@ -30,6 +30,13 @@ const Navbar = () => {
           Contact
           <span className="absolute left-0 -bottom-1 w-0 h-0.5 bg-red-500 transition-all group-hover:w-full"></span>
         </Link>
+        <Link
+          to="/services"
+          className="relative transition duration-300 group"
+        >
+          Services
+          <span className="absolute left-0 -bottom-1 w-0 h-0.5 bg-red-500 transition-all group-hover:w-full"></span>
+        </Link>
       </div>
     </div>
   );

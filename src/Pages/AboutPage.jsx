@@ -1,7 +1,9 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 // import CTASection from "../components/CTASection";
 
 const AboutPage = () => {
+  const navigate = useNavigate();
   return (
     <div className="min-h-screen font-sans text-white bg-black">
       {/* Hero Section */}
@@ -76,9 +78,8 @@ const AboutPage = () => {
         </h2>
         <p className="max-w-xl mx-auto mt-4 text-gray-400">
           Ready to take your projects to the next level? Connect with us and 
-          transform your vision into reality with precision and creativity.
-        </p>
-        <button className="px-8 py-3 mt-8 text-lg font-semibold transition-transform rounded-full shadow-lg bg-gradient-to-r from-cyan-500 to-blue-600 hover:scale-105">
+          transform your vision into reality with precision and creativity. </p>
+        <button onClick={() => navigate("/contact")} className="px-8 py-3 mt-8 text-lg font-semibold transition-transform rounded-full shadow-lg bg-gradient-to-r from-cyan-500 to-blue-600 hover:scale-105">
           Contact Us Today
         </button>
       </section>

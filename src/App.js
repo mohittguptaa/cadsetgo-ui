@@ -7,6 +7,8 @@ import FourOFour from './Pages/FourOFour';
 import Navbar from './component/Common/Navbar';
 import Footer from './component/Common/Footer';
 import LoadingScreen from './component/Common/LoadingScreen';
+import ServicesPage from './Pages/ServicesPage';
+import ScrollToTop from './component/Common/ScrollToTop';
 
 function App() {
     const [loading, setLoading] = useState(true);
@@ -19,16 +21,18 @@ function App() {
   
     if (loading) return <LoadingScreen />;
   return (
-      <Router>
+    <Router>
+      <ScrollToTop />
       <Navbar/>
-        <Routes>
-          <Route path="/" element={<HomePage/>} />
-          <Route path="/about" element={<AboutPage/>} />
-          <Route path="/contact" element={<ContactPage/>} />
-          <Route path="*" element={<FourOFour/>} />
-        </Routes>
-        <Footer/>
-      </Router>
+      <Routes>
+        <Route path="/" element={<HomePage/>} />
+        <Route path="/about" element={<AboutPage/>} />
+        <Route path="/contact" element={<ContactPage/>} />
+        <Route path="/services" element={<ServicesPage/>} />
+        <Route path="*" element={<FourOFour/>} />
+      </Routes>
+      <Footer/>
+    </Router>
   );
 }
 
