@@ -1,8 +1,8 @@
-import HeroSection from "../component/HeroSection";
-import WhyChoose from "../component/WhyChoose";
-import ServicesSection from "../component/ServicesSection";
-import InfoSection from "../component/InfoSection";
-import CTASection from "../component/CTASection";
+import HeroSection from "../component/HomeComponents/HeroSection";
+import WhyChoose from "../component/HomeComponents/WhyChoose";
+import ServicesSection from "../component/HomeComponents/ServicesSection";
+import InfoSection from "../component/HomeComponents/InfoSection";
+import CTASection from "../component/Common/CTASection";
 
 const HomePage = () => {
 

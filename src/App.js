@@ -4,9 +4,9 @@ import HomePage from './Pages/HomePage';
 import AboutPage from './Pages/AboutPage';
 import ContactPage from './Pages/ContactPage';
 import FourOFour from './Pages/FourOFour';
-import Navbar from './component/Navbar';
-import Footer from './component/Footer';
-import LoadingScreen from './component/LoadingScreen';
+import Navbar from './component/Common/Navbar';
+import Footer from './component/Common/Footer';
+import LoadingScreen from './component/Common/LoadingScreen';
 
 function App() {
     const [loading, setLoading] = useState(true);
