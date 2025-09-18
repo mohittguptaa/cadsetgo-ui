@@ -24,9 +24,9 @@ const AboutPage = () => {
       {/* Director Message */}
       <section className="flex flex-col items-center gap-12 px-6 py-16 md:px-20 md:flex-row">
         <img
-          src="https://i.ibb.co/dM9fY6g/director.jpg" // replace with actual director image
+          src="/my-img.png" // replace with actual director image
           alt="Director"
-          className="object-cover border border-gray-700 shadow-lg w-72 h-72 rounded-2xl"
+          className="object-cover shadow-lg w-72 h-72 "
         />
         <div className="max-w-2xl">
           <h2 className="text-3xl font-semibold text-cyan-400">Director’s Message</h2>
